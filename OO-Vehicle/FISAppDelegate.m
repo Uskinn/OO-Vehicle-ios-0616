@@ -7,6 +7,9 @@
 //
 
 #import "FISAppDelegate.h"
+#import "FISCar.h"
+#import "FISPlane.h"
+#import "FISRaceCar.h"
 
 @implementation FISAppDelegate
 
@@ -14,7 +17,15 @@
 {
 
     // Override point for customization after application launch.
-
+    
+    
+    FISPlane * newPlane = [[FISPlane alloc]initWithWeight:255.000 topSpeed:614.0];
+    NSLog(@"%@", newPlane);
+    
+    FISRaceCar *raceCar = [[FISRaceCar alloc] init];
+    
+    NSLog(@"raceCar weighs: %f", raceCar.weight);
+    
     return YES;
 }
 
